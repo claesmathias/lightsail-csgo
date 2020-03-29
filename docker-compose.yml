@@ -7,7 +7,17 @@ services:
     container_name: csgo-server
     network_mode: host
     environment:
-      - SRCDS_TOKEN=${TOKEN}
+      - SRCDS_TOKEN=${CSGO_TOKEN}
+      - SRCDS_RCONPW=${CSGO_RCONPW} 
+      - SRCDS_PW=${CSGO_SERVERPW}
+      - SRCDS_PORT=27015
+      - SRCDS_TV_PORT=27020
+      - SRCDS_FPSMAX=300
+      - SRCDS_TICKRATE=128
+      - SRCDS_MAXPLAYERS=${CSGO_MAXPLAYERS}
+      - SRCDS_STARTMAP=${CSGO_MAP}
+      - SRCDS_REGION=3
+      - SRCDS_MAPGROUP="mg_active"
 
   duckdns:
     image: linuxserver/duckdns
