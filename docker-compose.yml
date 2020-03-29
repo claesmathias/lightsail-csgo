@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  csgo:
+    image: cm2network/csgo
+    container_name: csgo-server
+    network_mode: host
+    environment:
+      - SRCDS_TOKEN=${TOKEN}
+
+  duckdns:
+    image: linuxserver/duckdns
+    container_name: duckdns
+    environment:
+      - TZ=${TZ}
+      - SUBDOMAINS=${DUCKDNS_SUBDOMAINS}
+      - TOKEN=${DUCKDNS_TOKEN}
+    volumes:
+      - /home/centos/duckdns/config:/config #optional
+    restart: unless-stopped
