@@ -3,7 +3,7 @@ version: '3'
 services:
 
   csgo:
-    image: cm2network/csgo
+    image: cm2network/csgo:sourcemod
     container_name: csgo-server
     network_mode: host
     environment:
