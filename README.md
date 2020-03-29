@@ -12,7 +12,7 @@ You can find the script in `/var/lib/cloud/instance/user-data.txt` on the instan
 ```
 aws lightsail open-instance-public-ports --port-info fromPort=27015,toPort=27015,protocol=TCP --instance-name csgo-vm
 aws lightsail open-instance-public-ports --port-info fromPort=27015,toPort=27015,protocol=UDP --instance-name csgo-vm
-aws lightsail open-instance-public-ports --port-info fromPort=27020,toPort=27020,protocol=TCP --instance-name csgo-vm
+aws lightsail open-instance-public-ports --port-info fromPort=27020,toPort=27020,protocol=UDP --instance-name csgo-vm
 ```
 
 ### Assign static IP (optional)
