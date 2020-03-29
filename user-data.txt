@@ -23,10 +23,10 @@ cat <<EOF >/home/centos/lightsail-csgo/.env
 DUCKDNS_SUBDOMAINS=subdomain.duckdns.org
 DUCKDNS_TOKEN=duck-dns-token
 CSGO_TOKEN=csgo-token
-SRCDS_RCONPW=password 
-SRCDS_PW=password
-SRCDS_MAXPLAYERS=16
-SRCDS_STARTMAP=de_dust2
+CSGO_RCONPW=password
+CSGO_SERVERPW=password
+CSGO_MAXPLAYERS=16
+CSGO_STARTMAP=de_dust2
 EOF
 
 # set permissions
